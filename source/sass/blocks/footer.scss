@@ -1,0 +1,147 @@
+.footer {
+  padding-top: 36px;
+  padding-bottom: 25px;
+  padding-right: 85px;
+  padding-left: 85px;
+
+  @include center;
+
+  &--second-page {
+    padding-top: 74px;
+  }
+
+  &--third-page {
+    padding-top: 24px;
+    padding-left: 84px;
+  }
+}
+
+.footer__tag {
+  margin-bottom: 34px;
+}
+
+.footer__heading {
+  font-size: 21px;
+}
+
+.footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include reset-list;
+}
+
+.footer__social-item {
+  width: 46px;
+  height: 48px;
+
+  background-color: $main-blue-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & svg {
+      fill: rgba(#ffffff, 0.3%);
+    }
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+}
+
+.footer__social-icon {
+  margin-left: auto;
+  margin-right: auto;
+
+  fill: #ffffff;
+}
+
+.footer__author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footer__author-text {
+  padding-right: 14px;
+}
+
+.footer__author-link {
+  padding-top: 8px;
+
+  &:hover {
+    fill: $main-blue-color;
+  }
+
+  &:active {
+    fill: rgba(#000000, 0.3%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    align-items: center;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 60px;
+    padding-right: 65px;
+
+    &--second-page {
+      padding-top: 76px;
+    }
+
+    &--third-page {
+      padding-top: 47px;
+    }
+  }
+
+  .footer__tag {
+    margin-bottom: 0;
+    margin-right: 108px;
+  }
+
+  .footer__social-item {
+    margin-left: 6px;
+  }
+
+  .footer__author {
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .footer__author-text {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-left: 120px;
+    padding-right: 120px;
+
+    &--second-page {
+      padding-top: 120px;
+    }
+  }
+
+  .footer__tag {
+    margin-right: 265px;
+  }
+}
