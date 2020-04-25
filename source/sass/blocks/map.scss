@@ -1,0 +1,54 @@
+.map__container {
+  position: relative;
+
+  min-height: 350px;
+
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__container {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    &::before {
+      top: 48%;
+      left: 48%;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__container {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    &::before {
+      top: 46%;
+      left: 49%;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}

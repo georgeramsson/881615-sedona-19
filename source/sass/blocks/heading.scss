@@ -1,0 +1,16 @@
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+
+  &--white {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading {
+    font-size: 21px;
+  }
+}
